@@ -1,0 +1,25 @@
+.button {
+  color: #f0ece8;
+  background-color: #8aa3ba;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+.button:hover,
+.button:focus {
+  color: #fcf9f5;
+  background-color: #e5a260;
+}
+
+.medium {
+  padding: 10px 15px;
+  border-radius: 50px;
+  min-width: 100px;
+}
+
+.small {
+  padding: 5px 10px;
+  border-radius: 10px;
+}

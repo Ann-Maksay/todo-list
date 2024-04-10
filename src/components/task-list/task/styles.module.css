@@ -1,0 +1,52 @@
+.task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 450px;
+  padding: 15px;
+  border: 1px solid #cdbbac;
+  border-radius: 20px;
+}
+
+.task-content {
+  text-align: start;
+}
+
+.title {
+  margin: 0 0 10px 0;
+  color: #8d8079;
+}
+
+.description,
+.empty-description {
+  margin: 0;
+  max-width: 300px;
+}
+
+.description {
+  color: #baaea1;
+}
+
+.empty-description {
+  color: #b8b6b0;
+}
+
+.toolbar {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 5px;
+}
+
+@media screen and (max-width: 500px) {
+  .task {
+    flex-direction: column;
+    min-width: unset;
+    width: 80%;
+    gap: 5px;
+  }
+
+  .toolbar {
+    flex-direction: row;
+  }
+}

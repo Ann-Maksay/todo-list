@@ -1,0 +1,33 @@
+.checkbox-container {
+  display: flex;
+  align-items: center;
+}
+
+.label {
+  font-size: 15px;
+  color: #b8b6b0;
+}
+
+.checkbox {
+  width: 16px;
+  height: 16px;
+  appearance: none;
+  cursor: pointer;
+  border: 1px solid #cdbbac;
+  border-radius: 3px;
+}
+
+.checkbox:checked {
+  position: relative;
+  background-color: #e5a260;
+  border-color: #e5a260;
+}
+
+.checkbox:checked::before {
+  position: absolute;
+  right: 1px;
+  bottom: -1px;
+  font-size: 13px;
+  color: #f0ece8;
+  content: "\2714 \fe0e";
+}
